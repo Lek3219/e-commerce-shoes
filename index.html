@@ -7,64 +7,83 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | E-commerce product page</title>
-
 </head>
+
+
 <body>
   <div class="wrapper">
     <header>
       <nav>
-        <img src="images/icon-menu.svg" alt="" class="open-menu">
-        <ul>
-          <li><span class=""button-menu"">Collections</span> <span class="underline"></span> </li>
-          <li><span class=""button-menu"">Men </span><span class="underline"></span></li>
-          <li><span class=""button-menu"">Women </span><span class="underline"></span></li>
-          <li><span class=""button-menu"">About</span> <span class="underline"></span></li>
-          <li><span class=""button-menu"">Contact</span> <span class="underline"></span></li>
-        </ul>
+        <i src="images/icon-menu.svg" alt="" class="open-menu">
+          <div class="menu">
+            <ul>
+              <li><span class="button-menu">Collections</span> <span class="underline"></span> </li>
+              <li><span class="button-menu">Men </span><span class="underline"></span></li>
+              <li><span class="button-menu">Women </span><span class="underline"></span></li>
+              <li><span class="button-menu">About</span> <span class="underline"></span></li>
+              <li><span class="button-menu">Contact</span> <span class="underline"></span></li>
+            </ul>
+          </div>
       </nav>
   
       <a href="#" class="logo"><img src="images/logo.svg" alt="sneakers logo"></a>
       
-      <button class="btn-cart"><img src="images/icon-cart.svg" alt="" class="icon-cart"></button>
+      <button class="btn-cart"><i src="images/icon-cart.svg" alt="" class="icon-cart"></button>
       <button class="btn-profile"><img src="images/image-avatar.png" alt="" class="avatar"></button>
       <div class="cart">
-        <p class="cart-head"></p>
+        <span class="cart-head"></span>
         <div class="cart-cont">
-          <p class="empty-cart">Your cart is empty.</p>
-          <img src="images/image-product-1-thumbnail.jpg" alt="shoe">
-          <p class="cart-info">Autumn Limited Edition  <span class="ammount">$125 x 3</span><span class="pay-ammount">$375</span></p>
-          <img src="images/icon-delete.svg" alt="delete-icon" class="delete">
+          <span class="empty-cart">Your cart is empty.</span>
+
+          <div class="order">
+            <img src="images/image-product-1-thumbnail.jpg" alt="shoe">
+            <span class="cart-info">Autumn Limited Edition  <span class="ammount">$125 x 3</span><span class="pay-ammount">$375</span></span>
+            <i src="images/icon-delete.svg" alt="delete-icon" class="delete">
+          </div>
+
+          <button class="checkout"><span>Checkout</span></button>
         </div>
       </div>
     </header>
 
-    <section class="gallery">
+
+     <div class="content">
+      <section class="gallery">
         <img src="images/image-product-1.jpg" alt="another shoe" class="displayed-img">
-        <ul>
-          <li><img src="images/image-product-1-thumbnail.jpg" alt="Another shoe" class="shoe1"></li>
-          <li><img src="images/image-product-2-thumbnail.jpg" alt="Another shoe" class="shoe2"></li>
-          <li><img src="images/image-product-3-thumbnail.jpg" alt="Another shoe" class="shoe3"></li>
-          <li><img src="images/image-product-4-thumbnail.jpg" alt="Another shoe" class="shoe4"></li>
-        </ul>
+        <div class="images">
+          <ul>
+            <li><img src="images/image-product-1-thumbnail.jpg" alt="Another shoe" class="shoe1"></li>
+            <li><img src="images/image-product-2-thumbnail.jpg" alt="Another shoe" class="shoe2"></li>
+            <li><img src="images/image-product-3-thumbnail.jpg" alt="Another shoe" class="shoe3"></li>
+            <li><img src="images/image-product-4-thumbnail.jpg" alt="Another shoe" class="shoe4"></li>
+          </ul>
+        </div>
       </section>
 
       <section class="info">
-        <p class="name">Sneakers Company</p>
-        <p class="promo"> Fall Limited Edition Sneakers</p>
+        <span class="name">Sneakers Company</span>
+        <span class="promo"> Fall Limited Edition Sneakers</span>
         <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
           durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-        <p class="real-price">$125</p>
-        <p class="percent">50%</p>
-        <p class="discount">$250</p>
 
-        <div class="buy">
-          <button class="minus"><img src="images/icon-minus.svg" alt="icon minus"></button>
-          <p class="total">0</p>
-          <button class="minus"><img src="images/icon-plus.svg" alt="icon plus"></button>
-          <button class="add-to-cart"><img src="images/icon-cart.svg" alt="icon cart"><span>Add to cart</span></button>
+        <div class="price">
+          <span class="real-price">$125</span>
+          <span class="percent">50%</span>
+          <span class="discount">$250</span>
+        </div>
+
+        <div class="add">
+          <div class="select-ammount">
+            <button class="minus"><i src="images/icon-minus.svg" alt="icon minus"></button>
+            <span class="total">0</span>
+            <button class="minus"><i src="images/icon-plus.svg" alt="icon plus"></button>
+          </div>
+          <button class="add-to-cart"><i src="images/icon-cart.svg" alt="icon cart"><span>Add to cart</span></button>
         </div>
       </section>
     </div>
+  </div> 
+      
 </body>
 
 <footer>
